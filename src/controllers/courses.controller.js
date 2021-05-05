@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import Course from '../models/courses.model';
 
-const create = (req, res) => {
+const create = (req, res) => {    
     const course = Course(req.body);
     course.save((err, data) => {
         if(err) {
